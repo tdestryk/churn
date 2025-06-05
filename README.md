@@ -1,45 +1,35 @@
-# 📉 Customer Churn Prediction
+# Customer Churn Prediction with Streamlit
 
-This project builds a machine learning model to predict customer churn using a real-world telecom dataset. It demonstrates end-to-end data science skills, including EDA, feature engineering, model training, evaluation, and saving the model for deployment.
+This project uses a machine learning model to predict customer churn based on a few key features such as gender, contract type, streaming services, and monthly charges. It includes:
 
----
-
-## 📁 Project Structure
-## 📊 Dataset Overview
-
-- Source: [Telco Customer Churn on Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)
-- Size: ~7,000 records
-- Target: `Churn` (Yes/No)
+- A trained Random Forest model
+- A simplified interface built with Streamlit
+- Visualizations for model performance and feature importance
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 🔍 What is Churn?
 
-Key insights:
-- 📆 Customers on **month-to-month contracts** churn far more than those on long-term contracts
-- 💰 Higher **MonthlyCharges** are linked to higher churn
-- 🧓 Seniors and those without **OnlineSecurity** or **TechSupport** churn more frequently
+**Customer churn** occurs when a customer stops doing business with a company. Predicting churn allows companies to take action before losing customers.
 
 ---
 
-## 🤖 Modeling
+## 📦 Features Used
 
-- Model: `RandomForestClassifier`
-- Features: Cleaned + label encoded
-- Scoring: Classification report + confusion matrix
+The model was trained using these 5 core features:
+- `gender`
+- `StreamingTV`
+- `StreamingMovies`
+- `Contract`
+- `MonthlyCharges`
+
+These were selected for a lightweight, user-friendly prediction interface.
 
 ---
 
-## 📦 Output
+## 🚀 How to Run the Streamlit App
 
-- ✅ Trained model saved as `model/churn_model.pkl` using `joblib`
-
----
-
-## 🧪 Try It Yourself
-
-To run:
-
+### 1. Clone the repository
 ```bash
-pip install -r requirements.txt
-jupyter notebook
+git clone https://github.com/tdestryk/churn-predictor.git
+cd churn-predictor
