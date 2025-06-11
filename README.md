@@ -10,7 +10,8 @@ This project uses a machine learning model to predict customer churn based on a 
 
 ## 🔍 What is Churn?
 
-**Customer churn** occurs when a customer stops doing business with a company. Predicting churn allows companies to take action before losing customers.
+**Customer churn** occurs when a customer stops doing business with a company. Predicting churn allows companies to take action before losing customers. 
+Customer churn in the context of streaming apps refers to when a user cancels their subscription or stops using the platform. Predicting churn helps streaming services identify at-risk users early—so they can take proactive steps like offering personalized recommendations, discounts, or improved support to retain those users before they leave.
 
 ---
 
